@@ -7,6 +7,11 @@ Example of using Go with Amazon SNS and SQS
 $ cp .env.dist .env
 ```
 
+1.1 Update `.env` config file and run
+```shell
+$ . ./.env
+```
+
 2. Get dependencies by running
 ```shell
 $ go mod vendor
