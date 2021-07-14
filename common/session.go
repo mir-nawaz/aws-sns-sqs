@@ -14,7 +14,7 @@ func BuildSession() *session.Session {
 
 	sessionConfig := &aws.Config{
 		Region:      aws.String(creds.Region),
-		Credentials: credentials.NewStaticCredentials(creds.AccessKey, creds.SecretKey, ""),
+		Credentials: credentials.NewStaticCredentials(creds.AccessKey, creds.SecretKey, creds.Token),
 	}
 
 	sess, err := session.NewSession(sessionConfig)
